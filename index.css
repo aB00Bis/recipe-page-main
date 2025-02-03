@@ -1,0 +1,175 @@
+@media screen and (max-width: 600px) {
+	.container {
+		margin: 0 !important;
+		padding: 20px;
+		border-radius: 0 !important;
+	}
+
+	.card__title {
+		font-size: 28px !important;
+	}
+
+	.card__description,
+	.list-item {
+		font-size: 14px !important;
+	}
+
+	.preparation__title,
+	.section-title {
+		font-size: 24px !important;
+	}
+
+	.nutrition p {
+		font-size: 12px !important;
+	}
+
+	th,
+	td {
+		font-size: 14px !important;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--white: hsl(0, 0%, 100%);
+
+	--stone100: hsl(30, 54%, 90%);
+	--stone150: hsl(30, 18%, 87%);
+	--stone600: hsl(30, 10%, 34%);
+	--stone900: hsl(24, 5%, 18%);
+
+	--brown800: hsl(14, 45%, 36%);
+
+	--rose50: hsl(330, 100%, 98%);
+	--rose800: hsl(332, 51%, 32%);
+}
+
+body {
+	background-color: var(--stone100);
+	color: var(--stone600);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Outfit';
+	font-weight: 400;
+}
+
+ul,
+ol {
+	margin-left: 25px;
+}
+
+li {
+	padding-left: 20px;
+}
+
+.container {
+	display: flex;
+	text-align: left;
+	justify-content: center;
+	align-items: center;
+	max-width: 750px;
+	background: var(--white);
+	margin: 60px 0;
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card__image {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.card__title {
+	font-family: 'Young Serif';
+	font-size: 44px;
+	font-weight: 400;
+	margin: 20px 0;
+	color: var(--stone900);
+}
+
+.card__description {
+	margin-bottom: 30px;
+}
+
+.preparation {
+	background-color: var(--rose50);
+	padding: 25px 30px;
+	border-radius: 10px;
+}
+
+.preparation__title {
+	color: var(--rose800);
+	margin-bottom: 10px;
+}
+
+.preparation__list li::marker {
+	color: var(--rose800);
+}
+
+.list-item {
+	line-height: 35px;
+}
+
+.card__subtitle {
+	padding-bottom: 30px;
+	border-bottom: 1px solid var(--stone150);
+}
+
+.section-title {
+	font-family: 'Young Serif';
+	font-weight: 400;
+	font-size: 32px;
+	color: var(--brown800);
+	margin: 20px 0;
+}
+
+.list-item::marker {
+	color: var(--brown800);
+}
+
+.card__subtitle:last-child {
+	border-bottom: none;
+}
+
+.nutrition {
+	padding-top: 10px;
+}
+
+.nutrition p {
+	margin-bottom: 20px;
+	color: var(--stone600);
+}
+
+.nutrition__table {
+	width: 100%;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid var(--stone150);
+}
+
+th {
+	padding-left: 40px;
+	font-weight: normal;
+	color: var(--stone600);
+}
+
+td {
+	font-weight: 700;
+	color: var(--brown800);
+}
